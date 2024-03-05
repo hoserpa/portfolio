@@ -1,9 +1,9 @@
 ---
 interface Props {
-	title: string;
+	title: string
 }
 
-const { title } = Astro.props;
+const { title } = Astro.props
 ---
 
 <!doctype html>
@@ -36,6 +36,11 @@ const { title } = Astro.props;
 		font-family: system-ui, sans-serif;
 		background: #13151a;
 		background-size: 224px;
+	}
+	body {
+		height: 85vh;
+		overflow: hidden;
+		margin: 4rem;
 	}
 	code {
 		font-family:
