@@ -1,72 +1,27 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import NavBar from "../components/NavBar.astro"
+import Title from "../components/Title.astro"
+import Avatar from "../components/Avatar.astro"
+import SideLeft from "../components/SideLeft.astro"
+import SideRight from "../components/SideRight.astro"
+import Footer from "../components/Footer.astro"
 import Card from "../components/Card.astro"
 ---
 
 <Layout title="Welcome to Astro.">
 	<main id="main">
+		<NavBar />
 		<div id="content" class="content">
-			<h1>Welcome to Astro</h1>
-			<p>
-				To get started, open the directory <code>src/pages</code> in your project.<br
-				/>
-				<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-			</p>
-			<p>
-				To get started, open the directory <code>src/pages</code> in your project.<br
-				/>
-				<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-			</p>
-			<p>
-				To get started, open the directory <code>src/pages</code> in your project.<br
-				/>
-				<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-			</p>
-			<p>
-				To get started, open the directory <code>src/pages</code> in your project.<br
-				/>
-				<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-			</p>
-			<p>
-				To get started, open the directory <code>src/pages</code> in your project.<br
-				/>
-				<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-			</p>
-			<p>
-				To get started, open the directory <code>src/pages</code> in your project.<br
-				/>
-				<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-			</p>
-			<p>
-				To get started, open the directory <code>src/pages</code> in your project.<br
-				/>
-				<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-			</p>
-			<p>
-				To get started, open the directory <code>src/pages</code> in your project.<br
-				/>
-				<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-			</p>
-			<p>
-				To get started, open the directory <code>src/pages</code> in your project.<br
-				/>
-				<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-			</p>
-			<p>
-				To get started, open the directory <code>src/pages</code> in your project.<br
-				/>
-				<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-			</p>
-			<p>
-				To get started, open the directory <code>src/pages</code> in your project.<br
-				/>
-				<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-			</p>
-			<p>
-				To get started, open the directory <code>src/pages</code> in your project.<br
-				/>
-				<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-			</p>
+			<div class="wrapper">
+				<Avatar />
+				<Title title="Welcome to Astro" help=""></Title>
+				<div class="contentMain">
+					<SideLeft />
+					<SideRight />
+				</div>
+				<Footer />
+			</div>
 		</div>
 	</main>
 </Layout>
@@ -81,6 +36,7 @@ import Card from "../components/Card.astro"
 		background-color: #f0f0f0;
 		box-shadow: inset 0 0 10px #000000;
 		font-family: Arial, sans-serif;
+		font-family: "Courier New", Courier, monospace;
 		border-radius: 8px;
 		height: 100%;
 		width: 100%;
@@ -95,18 +51,39 @@ import Card from "../components/Card.astro"
 		0% {
 			background-color: #333;
 			color: #f0f0f0;
+			opacity: 0;
 		}
 		100% {
 			background-color: #f0f0f0;
 			color: #333;
+			opacity: 1;
 		}
 	}
 
 	.content {
-		height: 85%;
+		height: 80%;
 		width: 95%;
-		margin: 4rem;
+		margin-top: 2rem;
 		overflow: auto;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+	}
+
+	.wrapper {
+		display: flex;
+		flex-flow: row wrap;
+		text-align: center;
+		width: 65%;
+	}
+	.wrapper > * {
+		flex: 1 100%;
+	}
+
+	.contentMain {
+		display: flex;
+		flex-flow: row wrap;
+		text-align:left;
 	}
 
 	/* Scrollbar */
@@ -127,11 +104,12 @@ import Card from "../components/Card.astro"
 	const content: Element | null = document.getElementById("content")
 	if (content) {
 		content.addEventListener("scroll", event => {
-			const main: Element | null = document.getElementById("main")
-			if (main) {
-				main.animate(
+			const content: Element | null = document.getElementById("content")
+			if (content) {
+				content.animate(
 					{
-						color: ["#f0f0f0", "#333"]
+						color: ["#f0f0f0", "#333"],
+						//background: ["#333", "#f0f0f0"]
 					},
 					1000
 				)

@@ -1,0 +1,91 @@
+---
+const date: string | null = new Date().toLocaleTimeString(undefined, {
+	hour: "2-digit",
+	minute: "2-digit"
+})
+---
+
+<div class="navContent">
+	<div class="logo">AAA</div>
+	<div class="navItems">
+		<div class="navDate"><p>{date}</p></div>
+		<div class="navItem">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="icon icon-tabler icon-tabler-wifi"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				stroke-width="2"
+				stroke="currentColor"
+				fill="none"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+					d="M12 18l.01 0"></path><path d="M9.172 15.172a4 4 0 0 1 5.656 0"
+				></path><path d="M6.343 12.343a8 8 0 0 1 11.314 0"></path><path
+					d="M3.515 9.515c4.686 -4.687 12.284 -4.687 17 0"></path>
+			</svg>
+		</div>
+		<div class="navItem">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="icon icon-tabler icon-tabler-battery-4"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				stroke-width="2"
+				stroke="currentColor"
+				fill="none"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+					d="M6 7h11a2 2 0 0 1 2 2v.5a.5 .5 0 0 0 .5 .5a.5 .5 0 0 1 .5 .5v3a.5 .5 0 0 1 -.5 .5a.5 .5 0 0 0 -.5 .5v.5a2 2 0 0 1 -2 2h-11a2 2 0 0 1 -2 -2v-6a2 2 0 0 1 2 -2"
+				></path><path d="M7 10l0 4"></path><path d="M10 10l0 4"></path><path
+					d="M13 10l0 4"></path><path d="M16 10l0 4"></path>
+			</svg>
+		</div>
+	</div>
+</div>
+<style>
+	.navContent {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 0.5rem 2rem 0rem 2rem;
+		border-bottom: solid #333;
+		align-items: baseline;
+	}
+	.logo {
+		justify-content: flex-start;
+		font-weight: bold;
+	}
+	.navItems {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+	.navDate {
+		margin-right: 2px;
+		font-weight: bold;
+		font-family: "Courier New", Courier, monospace;
+		text-align: center;
+	}
+	.navDate p {
+		margin: auto;
+	}
+	.navItem {
+		margin: 0.2rem;
+		margin-bottom: 0.3rem;
+		font-weight: bold;
+		display: inline-flex;
+		align-self: center;
+	}
+
+	/* Medium screens */
+@media all and (min-width: 600px) {
+  .navDate {
+		margin-right: 2rem;
+	}
+}
+</style>
