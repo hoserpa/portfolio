@@ -1,12 +1,13 @@
 ---
 interface Props {
-  title: string;
-  help: string;
+	title: string
+	help: string
 }
 
-const { title, help } = Astro.props;
+const { title, help } = Astro.props
 ---
 
 <div style="flex: 2 0px; align-self: center; text-align: left;">
-  <h1>{title}</h1>
+	<h1>{title}</h1>
+	<h2>{help}</h2>
 </div>

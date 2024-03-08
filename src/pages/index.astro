@@ -15,7 +15,7 @@ import Card from "../components/Card.astro"
 		<div id="content" class="content">
 			<div class="wrapper">
 				<Avatar />
-				<Title title="Welcome to Astro" help=""></Title>
+				<Title title="Welcome to Astro" help="Text" />
 				<div class="contentMain">
 					<SideLeft />
 					<SideRight />
@@ -83,7 +83,7 @@ import Card from "../components/Card.astro"
 	.contentMain {
 		display: flex;
 		flex-flow: row wrap;
-		text-align:left;
+		text-align: left;
 	}
 
 	/* Scrollbar */
@@ -108,7 +108,7 @@ import Card from "../components/Card.astro"
 			if (content) {
 				content.animate(
 					{
-						color: ["#f0f0f0", "#333"],
+						color: ["#f0f0f0", "#333"]
 						//background: ["#333", "#f0f0f0"]
 					},
 					1000
