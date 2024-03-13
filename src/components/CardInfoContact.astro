@@ -2,10 +2,11 @@
 interface Props {
 	title: string
 	subtitle?: string
-	details: { icon: string; data: string }[]
+	contact: { icon: string; data: string }[]
+	socials: { icon: string; data: string; url: string }[]
 }
 
-const { title, subtitle, details } = Astro.props
+const { title, subtitle, contact, socials } = Astro.props
 ---
 
 <div class="card">
@@ -15,9 +16,20 @@ const { title, subtitle, details } = Astro.props
 	<h4>{subtitle}</h4>
 	<p>
 		{
-			details.map(item => (
+			contact.map(item => (
 				<>
 					<img class="icon" src={item.icon} alt={item.data} /> {item.data}
+					<br />
+				</>
+			))
+		}
+		{
+			socials.map(item => (
+				<>
+					<img class="icon" src={item.icon} alt={item.data} />{" "}
+					<a href={item.url} target="_blank" rel="noopener noreferrer">
+						{item.data}
+					</a>
 					<br />
 				</>
 			))
@@ -40,5 +52,16 @@ const { title, subtitle, details } = Astro.props
 		position: relative;
 		top: 7px;
 		left: 5px;
+	}
+	.card a {
+		text-decoration: none;
+		color: #333;
+	}
+	.card a:hover {
+		text-decoration: underline;
+	}
+	.card a:visited {
+		text-decoration: none;
+		color: #333;
 	}
 </style>

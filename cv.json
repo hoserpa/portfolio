@@ -14,14 +14,18 @@
     {
       "icon": "home.svg",
       "data": "Granada"
-    },
+    }
+  ],
+  "socials": [
     {
       "icon": "brand-linkedin.svg",
-      "data": "url"
+      "data": "url",
+      "url": "#"
     },
     {
       "icon": "brand-github.svg",
-      "data": "url"
+      "data": "url",
+      "url": "#"
     }
   ],
   "skills": [
