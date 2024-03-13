@@ -1,21 +1,23 @@
 ---
-import Layout from "../layouts/Layout.astro"
-import NavBar from "../components/NavBar.astro"
-import Title from "../components/Title.astro"
-import Avatar from "../components/Avatar.astro"
-import SideLeft from "../components/SideLeft.astro"
-import SideRight from "../components/SideRight.astro"
-import Footer from "../components/Footer.astro"
+import Layout from "@/layouts/Layout.astro"
+import NavBar from "@/components/NavBar.astro"
+import Title from "@/components/Title.astro"
+import Avatar from "@/components/Avatar.astro"
+import SideLeft from "@/components/SideLeft.astro"
+import SideRight from "@/components/SideRight.astro"
+import Footer from "@/components/Footer.astro"
 import Card from "../components/Card.astro"
+
+import { title, label } from "@cv"
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title={title}>
 	<main id="main">
 		<NavBar />
 		<div id="content" class="content">
 			<div class="wrapper">
 				<Avatar />
-				<Title title="Welcome to Astro" help="Text" />
+				<Title title={title} help={label} />
 				<div class="contentMain">
 					<SideLeft />
 					<SideRight />
@@ -108,8 +110,7 @@ import Card from "../components/Card.astro"
 			if (content) {
 				content.animate(
 					{
-						color: ["#f0f0f0", "#333"]
-						//background: ["#333", "#f0f0f0"]
+						opacity: ["0", "1"]
 					},
 					1000
 				)

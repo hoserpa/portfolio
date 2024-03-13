@@ -1,47 +1,15 @@
 ---
-import CardInfo from "./CardInfo.astro"
+import CardInfo from "@/components/CardInfo.astro"
+import CardInfoContact from "@/components/CardInfoContact.astro"
+import CardInfoList from "@/components/CardInfoList.astro"
+
+import { contact, skills, data, languages, interests } from "@cv"
 ---
 
 <div style="flex: 2 0px;">
-	<CardInfo title="Title" details="Details" />
-	<p>
-		To get started, open the directory <code>src/pages</code> in your project.<br
-		/>
-		<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-	</p>
-	<p>
-		To get started, open the directory <code>src/pages</code> in your project.<br
-		/>
-		<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-	</p>
-	<p>
-		To get started, open the directory <code>src/pages</code> in your project.<br
-		/>
-		<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-	</p>
-	<p>
-		To get started, open the directory <code>src/pages</code> in your project.<br
-		/>
-		<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-	</p>
-	<p>
-		To get started, open the directory <code>src/pages</code> in your project.<br
-		/>
-		<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-	</p>
-	<p>
-		To get started, open the directory <code>src/pages</code> in your project.<br
-		/>
-		<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-	</p>
-	<p>
-		To get started, open the directory <code>src/pages</code> in your project.<br
-		/>
-		<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-	</p>
-	<p>
-		To get started, open the directory <code>src/pages</code> in your project.<br
-		/>
-		<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-	</p>
+	<CardInfoContact title="Title" details={contact} />
+	<CardInfoList title="Title" subtitle="" list={skills} />
+	<CardInfo title="Title" details={data} />
+	<CardInfo title="Title" details={languages} />
+	<CardInfo title="Title" details={interests} />
 </div>

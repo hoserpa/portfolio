@@ -1,0 +1,62 @@
+{
+  "title": "Title",
+  "label": "Label",
+  "img": "avatar.png",
+  "contact": [
+    {
+      "icon": "mail.svg",
+      "data": "mail@mail.com"
+    },
+    {
+      "icon": "phone.svg",
+      "data": "6343434234"
+    },
+    {
+      "icon": "home.svg",
+      "data": "Granada"
+    },
+    {
+      "icon": "brand-linkedin.svg",
+      "data": "url"
+    },
+    {
+      "icon": "brand-github.svg",
+      "data": "url"
+    }
+  ],
+  "skills": [
+    {"value": ""},
+    {"value": ""},
+    {"value": ""}
+  ],
+  "data": [
+    {"value": ""},
+    {"value": ""},
+    {"value": ""}
+  ],
+  "languages": [
+    {"value": ""},
+    {"value": ""},
+    {"value": ""}
+  ],
+  "interests": [
+    {"value": ""},
+    {"value": ""},
+    {"value": ""}
+  ],
+  "education": [
+    {"value": ""},
+    {"value": ""},
+    {"value": ""}
+  ],
+  "certificates": [
+    {"value": ""},
+    {"value": ""},
+    {"value": ""}
+  ],
+  "work": [
+    {"value": ""},
+    {"value": ""},
+    {"value": ""}
+  ]
+}

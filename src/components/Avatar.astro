@@ -1,5 +1,5 @@
 ---
-
+import { img } from "@cv"
 ---
 
 <div class="imgContent">
@@ -20,9 +20,17 @@
 			d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z"
 		></path></svg
 	>
+	<!--
+	<img src={img} alt="avatar" />
+	-->
 </div>
 <style>
 	.imgContent {
 		flex: 1;
+		text-align: left;
+	}
+	.imgContent img {
+		max-width: 100%;
+		height: auto;
 	}
 </style>

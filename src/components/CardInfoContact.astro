@@ -2,7 +2,7 @@
 interface Props {
 	title: string
 	subtitle?: string
-	details: {value: string}[]
+	details: { icon: string; data: string }[]
 }
 
 const { title, subtitle, details } = Astro.props
@@ -14,9 +14,14 @@ const { title, subtitle, details } = Astro.props
 	</h3>
 	<h4>{subtitle}</h4>
 	<p>
-		<p>
-			{details.map(item => <>{item.value}</br></>)}
-		</p>
+		{
+			details.map(item => (
+				<>
+					<img class="icon" src={item.icon} alt={item.data} /> {item.data}
+					<br />
+				</>
+			))
+		}
 	</p>
 </div>
 <style>
@@ -30,5 +35,10 @@ const { title, subtitle, details } = Astro.props
 		opacity: 0.6;
 		margin-top: 0;
 		margin-bottom: 0.5rem;
+	}
+	.card .icon {
+		position: relative;
+		top: 7px;
+		left: 5px;
 	}
 </style>
