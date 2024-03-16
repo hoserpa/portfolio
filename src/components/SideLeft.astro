@@ -7,9 +7,13 @@ import { contact, socials, skills, data, languages, interests } from "@cv"
 ---
 
 <div style="flex: 2 0px;">
-	<CardInfoContact title="Title" contact={contact} socials={socials} />
-	<CardInfoList title="Title" subtitle="" list={skills} />
-	<CardInfo title="Title" details={data} />
-	<CardInfo title="Title" details={languages} />
-	<CardInfo title="Title" details={interests} />
+	<CardInfoContact
+		title="Datos de contacto"
+		contact={contact}
+		socials={socials}
+	/>
+	<CardInfoList title="Conocimientos" subtitle="" list={skills} />
+	<CardInfo title="Datos de interés" details={data} />
+	<CardInfo title="Idiomas" details={languages} />
+	<CardInfo title="Aficiones" details={interests} />
 </div>

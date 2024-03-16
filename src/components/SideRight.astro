@@ -1,11 +1,15 @@
 ---
-import CardInfoList from "@/components/CardInfoList.astro"
+import CardInfoListEducation from "@/components/CardInfoListEducation.astro"
+import CardInfoListWork from "@/components/CardInfoListWork.astro"
 
 import { education, certificates, work } from "@cv"
 ---
 
 <div style="flex: 4 0px;">
-	<CardInfoList title="Title" subtitle="subtitle" list={education} />
-	<CardInfoList title="Title" subtitle="subtitle" list={certificates} />
-	<CardInfoList title="Title" subtitle="subtitle" list={work} />
+	<h3>FORMACIÓN ACADÉMICA</h3>
+	<CardInfoListEducation list={education} />
+	<h3>FORMACIÓN COMPLEMENTARIA</h3>
+	<CardInfoListEducation list={certificates} />
+	<h3>EXPERIENCIA LABORAL</h3>
+	<CardInfoListWork list={work} />
 </div>

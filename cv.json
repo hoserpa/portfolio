@@ -1,15 +1,11 @@
 {
-  "title": "Title",
-  "label": "Label",
+  "title": "JOSÉ RAMÓN ÁLVAREZ",
+  "label": "Full Stack Developer",
   "img": "avatar.png",
   "contact": [
     {
       "icon": "mail.svg",
-      "data": "mail@mail.com"
-    },
-    {
-      "icon": "phone.svg",
-      "data": "6343434234"
+      "data": "joraalgo@gmail.com"
     },
     {
       "icon": "home.svg",
@@ -19,48 +15,90 @@
   "socials": [
     {
       "icon": "brand-linkedin.svg",
-      "data": "url",
-      "url": "#"
+      "data": "José Ramón Álvarez",
+      "url": "https://www.linkedin.com/in/jose-ramon-alvarez-73543ab0/"
     },
     {
       "icon": "brand-github.svg",
-      "data": "url",
-      "url": "#"
+      "data": "hoserpa",
+      "url": "https://github.com/hoserpa"
     }
   ],
   "skills": [
-    {"value": ""},
-    {"value": ""},
-    {"value": ""}
+    {"value": "Alto nivel en Javascript (Nodejs, React, Next.js, ...)."},
+    {"value": "Alto nivel en HTML y CSS."},
+    {"value": "Conocimientos en desarrollo de aplicaciones Android y IOS (Expo React-Native)."},
+    {"value": "Conocimientos en Java."},
+    {"value": "Conocimientos en PHP."},
+    {"value": "Conocimientos en Python."},
+    {"value": "Conocimientos de administración de sistemas (Promox, Xencenter, Linux, Apache, MySQL...)."},
+    {"value": "Conocimientos de framework MVC para PHP."},
+    {"value": "Conocimientos de lectura de logs (PHP, Java, Apache, MySQL) para la interpretación, identificación de problemas, y resolución de los mismos."},
+    {"value": "Conocimientos de diseño con Adobe Photoshop, Adobe Illustrator y Adobe After Effects."}
   ],
   "data": [
-    {"value": ""},
-    {"value": ""},
-    {"value": ""}
+    {"value": "Permiso de conducir - B"},
+    {"value": "Vehículo Propio."},
+    {"value": "Predisposición a aprender."},
+    {"value": "Rápida adaptación al medio de trabajo."}
   ],
   "languages": [
-    {"value": ""},
-    {"value": ""},
-    {"value": ""}
+    {"value": "Ingles - A2"},
+    {"value": "Castellano - Nativo"}
   ],
   "interests": [
-    {"value": ""},
-    {"value": ""},
-    {"value": ""}
+    {"value": "Electrónica"},
+    {"value": "Videojuegos"},
+    {"value": "Deportes (Ciclismo, fútbol, senderismo)"}
   ],
   "education": [
-    {"value": ""},
-    {"value": ""},
-    {"value": ""}
+    {
+      "center": "F.P II DESARROLLO DE APLICACIONES MULTIPLATAFORMA",
+      "course": "IES Francisco Ayala | 2014"
+    }
   ],
   "certificates": [
-    {"value": ""},
-    {"value": ""},
-    {"value": ""}
+    {
+      "center": "CERTIFICADO ASTERISK FAST START",
+      "course": "Avanzada 7 (Digium) | 2019"
+    },
+    {
+      "center": "CURSO DESARROLLO SOFTWARE GSBASE GALDON",
+      "course": "Galdon Software S.A. | 2018"
+    }
   ],
   "work": [
-    {"value": ""},
-    {"value": ""},
-    {"value": ""}
+    {
+      "name": "TELMI TELECOM",
+      "position": "Senior Full Stack Developer | 2015 - 2024",
+      "highlights": [
+        "App Web provisión equipos de cliente de fibra óptica (Nodejs)",
+        "App Web de informes sobre el estado de la red de fibra óptica (Nodejs)",
+        "API para las principales funciones (Nodejs)",
+        "App móvil para clientes (React-Native)",
+        "App móvil para alta de servicios de cliente (React-Native)",
+        "Aplicación web para la monitorización de equipos de red (Nodejs)",
+        "App móvil para el control horario de empleados (React-Native - Expo)",
+        "Migración desde el sistema Xenserver al sistema Proxmox de todos los servidores",
+        "Gestión de copias de seguridad de todos los sistemas",
+        "Gestión de servidores y maquinas virtuales(Xenserver, Proxmox)",
+        "Gestión usuarios de dominio Windows server",
+        "Gestión dominios de la empresa, correos de empleados..."
+      ]
+    },
+    {
+      "name": "INFORMÁTICA MEGASUR",
+      "position": "Full Stack Developer | 2015",
+      "highlights": [
+        "Web publico Telmi Telecom (Framework Yii2, PHP, HTML, CSS, Bootstrap, jQuery, JSON)"
+      ]
+    },
+    {
+      "name": "INFORMÁTICA MEGASUR",
+      "position": "370 horas de prácticas como Full Stack Developer | 2014",
+      "highlights": [
+        "Actualización de Blogs, App móvil Phoenix (PHP, HTML, CSS, jQuery, Wordpress)"
+      ]
+    }
   ]
 }
